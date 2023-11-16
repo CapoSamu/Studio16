@@ -52,12 +52,24 @@ public class studio1610 {
         scanner.nextLine();
 
 
+        System.out.println(risposta2("Andiamo a cena fuori?",scanner)?"andiamo al McDonald!" : "ok :(");
 
-
-        
         
             
         }
+
+    
+    public static boolean risposta2(String domanda,Scanner scan){
+        System.out.println(domanda);
+        String r = scan.nextLine();
+            
+    
+        if ( r.equals("Yes") || r.equals("si")) {return true;}
+        else if (r.equals("no")) { return false;}
+        else {return risposta2(domanda, scan);}
+
+            
+    }
         
         
 }
